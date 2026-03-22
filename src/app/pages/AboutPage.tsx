@@ -384,7 +384,7 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
             <div className="text-center mb-8">
-              <div className="text-5xl mb-3">📍</div>
+
               <h2 className="text-3xl font-bold mb-2" style={{ color: '#1a4d1a' }}>Our Location</h2>
               <p style={{ color: '#3a6060' }}>Strategically located in Silvassa, India</p>
             </div>
