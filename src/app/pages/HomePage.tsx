@@ -480,23 +480,27 @@ export function HomePage() {
             </FadeUp>
 
             <FadeUp delay={0.2}>
-              <div className="grid grid-cols-2 gap-3" style={{ height: '400px' }}>
-                {/* Top left — tall */}
-                <div className="rounded-2xl overflow-hidden row-span-2" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)', gridRow: 'span 2' }}>
+              <div className="flex flex-col items-center justify-center gap-6">
+                {/* Large circle — top center */}
+                <div className="rounded-full overflow-hidden flex-shrink-0"
+                  style={{
+                    width: '260px', height: '260px',
+                    border: '5px solid rgba(125,194,66,0.5)',
+                    boxShadow: '0 0 0 10px rgba(125,194,66,0.12), 0 16px 48px rgba(46,170,46,0.25)',
+                  }}>
                   <img src="/work.jpeg" alt="Factory floor" className="w-full h-full object-cover" />
                 </div>
-                {/* Top right */}
-                <div className="rounded-2xl overflow-hidden" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)' }}>
+                {/* Small circle — offset below */}
+                <div className="rounded-full overflow-hidden flex-shrink-0"
+                  style={{
+                    width: '180px', height: '180px',
+                    border: '5px solid rgba(41,171,226,0.5)',
+                    boxShadow: '0 0 0 8px rgba(41,171,226,0.1), 0 12px 36px rgba(41,171,226,0.25)',
+                    marginTop: '-40px',
+                    alignSelf: 'flex-end',
+                    marginRight: '20px',
+                  }}>
                   <img src="/work2.jpeg" alt="Manufacturing process" className="w-full h-full object-cover" />
-                </div>
-                {/* Bottom right — split into 2 */}
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="rounded-2xl overflow-hidden" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)' }}>
-                    <img src="/work3.jpeg" alt="Production line" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="rounded-2xl overflow-hidden" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)' }}>
-                    <img src="/work4.jpeg" alt="Quality control" className="w-full h-full object-cover" />
-                  </div>
                 </div>
               </div>
             </FadeUp>
