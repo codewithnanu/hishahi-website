@@ -480,20 +480,23 @@ export function HomePage() {
             </FadeUp>
 
             <FadeUp delay={0.2}>
-              <div className="relative flex justify-center items-end gap-4 min-h-40 sm:min-h-64">
-                <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0" style={{ border: '4px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 32px rgba(46,170,46,0.25)' }}>
-                  <img
-                    src="https://images.unsplash.com/photo-1767281075989-7571356d477e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwbWFjaGluZXJ5JTIwcHJvZHVjdGlvbiUyMGxpbmV8ZW58MXx8fHwxNzczMDE2MDUzfDA&ixlib=rb-4.1.0&q=80&w=400"
-                    alt="Manufacturing machinery"
-                    className="w-full h-full object-cover"
-                  />
+              <div className="grid grid-cols-2 gap-3" style={{ height: '400px' }}>
+                {/* Top left — tall */}
+                <div className="rounded-2xl overflow-hidden row-span-2" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)', gridRow: 'span 2' }}>
+                  <img src="/work.jpeg" alt="Factory floor" className="w-full h-full object-cover" />
                 </div>
-                <div className="w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full overflow-hidden flex-shrink-0 mb-8" style={{ border: '4px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 32px rgba(46,170,46,0.25)' }}>
-                  <img
-                    src="https://images.unsplash.com/photo-1768796369926-2e25a1e4fc9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBmYWN0b3J5JTIwbWFudWZhY3R1cmluZyUyMGZhY2lsaXR5fGVufDF8fHx8MTc3MzA0NTk2MHww&ixlib=rb-4.1.0&q=80&w=400"
-                    alt="Factory facility"
-                    className="w-full h-full object-cover"
-                  />
+                {/* Top right */}
+                <div className="rounded-2xl overflow-hidden" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)' }}>
+                  <img src="/work2.jpeg" alt="Manufacturing process" className="w-full h-full object-cover" />
+                </div>
+                {/* Bottom right — split into 2 */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="rounded-2xl overflow-hidden" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)' }}>
+                    <img src="/work3.jpeg" alt="Production line" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden" style={{ border: '3px solid rgba(255,255,255,0.8)', boxShadow: '0 8px 24px rgba(46,170,46,0.2)' }}>
+                    <img src="/work4.jpeg" alt="Quality control" className="w-full h-full object-cover" />
+                  </div>
                 </div>
               </div>
             </FadeUp>
