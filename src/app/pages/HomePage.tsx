@@ -134,8 +134,8 @@ export function HomePage() {
             <FadeUp delay={0.15}>
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1768796369926-2e25a1e4fc9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBmYWN0b3J5JTIwbWFudWZhY3R1cmluZyUyMGZhY2lsaXR5fGVufDF8fHx8MTc3MzA0NTk2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Manufacturing facility"
+                  src="/factory.jpeg"
+                  alt="Hisahi Plastochem manufacturing facility"
                   className="rounded-lg shadow-xl"
                   style={{ border: '3px solid #A5D63A' }}
                 />
