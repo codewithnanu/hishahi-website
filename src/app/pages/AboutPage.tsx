@@ -383,35 +383,81 @@ export function AboutPage() {
       <div className="bg-white py-16" style={{ borderTop: '2px solid #d0eef8' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeUp>
-            <div className="text-center mb-8">
-
-              <h2 className="text-3xl font-bold mb-2" style={{ color: '#1a4d1a' }}>Our Location</h2>
-              <p style={{ color: '#3a6060' }}>Strategically located in Silvassa, India</p>
+            <div className="text-center mb-10">
+              <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#29ABE2' }}>Find Us</p>
+              <h2 className="text-3xl font-bold" style={{ color: '#1a4d1a' }}>Our Location</h2>
+              <div className="mt-3 mx-auto w-16 h-0.5" style={{ background: 'linear-gradient(90deg, #7DC242, #29ABE2)' }} />
             </div>
           </FadeUp>
-          <FadeUp delay={0.1}>
-            <div className="rounded-2xl overflow-hidden max-w-2xl mx-auto" style={{ border: '2px solid #d0eef8', boxShadow: '0 8px 32px rgba(41,171,226,0.15)' }}>
-              <iframe
-                title="Hisahi Plastrochem Location"
-                src="https://maps.google.com/maps?q=Plot+No-16+Phase-II+Government+Industrial+Estate+Piparia+Silvassa+Dadra+and+Nagar+Haveli+396230&output=embed"
-                width="100%"
-                height="280"
-                style={{ border: 0, display: 'block' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-              <div className="px-6 py-4 flex items-start gap-3" style={{ background: '#E3F2FA' }}>
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#7DC242' }} />
-                <div>
-                  <p className="font-semibold" style={{ color: '#1a4d1a' }}>Hisahi Plastrochem</p>
-                  <p className="text-sm" style={{ color: '#3a6060' }}>
-                    Plot No-16, Phase-II, Govt. Industrial Estate, Piparia, Silvassa – 396230, U.T. of Dadra &amp; Nagar Haveli
-                  </p>
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+            {/* Left — details */}
+            <FadeUp>
+              <div className="flex flex-col gap-6 h-full justify-center">
+                {/* Address */}
+                <div className="flex items-start gap-4 p-5 rounded-2xl" style={{ background: '#f0faf5', border: '1px solid #b0ddb0' }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #7DC242, #29ABE2)' }}>
+                    <MapPin className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <p className="font-bold mb-1" style={{ color: '#1a4d1a' }}>Address</p>
+                    <p className="text-sm leading-relaxed" style={{ color: '#3a6060' }}>
+                      Plot No-16, Phase-II, Government Industrial Estate,<br />Piparia, Silvassa – 396230,<br />U.T. of Dadra &amp; Nagar Haveli
+                    </p>
+                  </div>
                 </div>
+                {/* Phone */}
+                <div className="flex items-start gap-4 p-5 rounded-2xl" style={{ background: '#f0f8ff', border: '1px solid #b0dde8' }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #29ABE2, #7DC242)' }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.07 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-bold mb-1" style={{ color: '#1a4d1a' }}>Phone</p>
+                    <p className="text-sm" style={{ color: '#3a6060' }}>+91 91377 31012</p>
+                  </div>
+                </div>
+                {/* Working hours */}
+                <div className="flex items-start gap-4 p-5 rounded-2xl" style={{ background: '#fffdf0', border: '1px solid #e0d890' }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #c08800, #7DC242)' }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-bold mb-1" style={{ color: '#1a4d1a' }}>Working Hours</p>
+                    <p className="text-sm" style={{ color: '#3a6060' }}>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                  </div>
+                </div>
+                {/* Get Directions button */}
+                <a
+                  href="https://maps.google.com/maps?q=Plot+No-16+Phase-II+Government+Industrial+Estate+Piparia+Silvassa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-white transition-all hover:scale-105"
+                  style={{ background: 'linear-gradient(135deg, #7DC242, #29ABE2)', boxShadow: '0 4px 16px rgba(125,194,66,0.3)' }}
+                >
+                  <MapPin className="w-4 h-4" />
+                  Get Directions
+                </a>
               </div>
-            </div>
-          </FadeUp>
+            </FadeUp>
+            {/* Right — map */}
+            <FadeUp delay={0.15}>
+              <div className="rounded-2xl overflow-hidden h-full" style={{ minHeight: '380px', border: '2px solid #d0eef8', boxShadow: '0 8px 32px rgba(41,171,226,0.15)' }}>
+                <iframe
+                  title="Hisahi Plastrochem Location"
+                  src="https://maps.google.com/maps?q=Plot+No-16+Phase-II+Government+Industrial+Estate+Piparia+Silvassa+Dadra+and+Nagar+Haveli+396230&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, display: 'block', minHeight: '380px' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </FadeUp>
+          </div>
         </div>
       </div>
 
