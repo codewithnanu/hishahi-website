@@ -480,25 +480,22 @@ export function HomePage() {
             </FadeUp>
 
             <FadeUp delay={0.2}>
-              <div className="flex flex-col items-center justify-center gap-6">
-                {/* Large circle — top center */}
+              <div className="flex justify-center items-center gap-6 flex-wrap">
+                {/* Large circle */}
                 <div className="rounded-full overflow-hidden flex-shrink-0"
                   style={{
-                    width: '260px', height: '260px',
+                    width: '200px', height: '200px',
                     border: '5px solid rgba(125,194,66,0.5)',
                     boxShadow: '0 0 0 10px rgba(125,194,66,0.12), 0 16px 48px rgba(46,170,46,0.25)',
                   }}>
                   <img src="/work.jpeg" alt="Factory floor" className="w-full h-full object-cover" />
                 </div>
-                {/* Small circle — offset below */}
+                {/* Small circle */}
                 <div className="rounded-full overflow-hidden flex-shrink-0"
                   style={{
-                    width: '180px', height: '180px',
+                    width: '150px', height: '150px',
                     border: '5px solid rgba(41,171,226,0.5)',
                     boxShadow: '0 0 0 8px rgba(41,171,226,0.1), 0 12px 36px rgba(41,171,226,0.25)',
-                    marginTop: '-40px',
-                    alignSelf: 'flex-end',
-                    marginRight: '20px',
                   }}>
                   <img src="/work2.jpeg" alt="Manufacturing process" className="w-full h-full object-cover" />
                 </div>
