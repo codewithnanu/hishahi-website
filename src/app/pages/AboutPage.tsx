@@ -187,28 +187,23 @@ export function AboutPage() {
               </div>
             </FadeUp>
             <FadeUp>
-              <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid #d0eef8', boxShadow: '0 8px 32px rgba(41,171,226,0.15)', background: 'white' }}>
-                {/* Top gradient bar */}
-                <div className="h-2 w-full" style={{ background: 'linear-gradient(90deg, #7DC242, #29ABE2)' }} />
-                <div className="grid md:grid-cols-2">
-                  {/* Left — image */}
-                  <div style={{ minHeight: '320px' }}>
-                    <img src="/bottlesimages.jpeg" alt="Hisahi Plastochem products" className="w-full h-full object-cover" style={{ minHeight: '320px' }} />
-                  </div>
-                  {/* Right — text */}
-                  <div className="p-8 flex flex-col justify-center">
-                    <div className="text-5xl mb-4">🎯</div>
-                    <h3 className="text-xl font-bold mb-4" style={{ color: '#1a4d1a' }}>Our Mission</h3>
-                    <blockquote className="text-lg font-semibold italic mb-4 pl-4" style={{ color: '#1a6c1a', borderLeft: '3px solid #7DC242' }}>
-                      "To be best at satisfying customer needs with innovative and tailored packaging products."
-                    </blockquote>
-                    <p style={{ color: '#3a5a5a' }}>
-                      We strive to understand our customers' unique requirements and deliver
-                      customized solutions that exceed expectations through continuous innovation
-                      and unwavering quality standards.
-                    </p>
-                  </div>
+              <div className="relative rounded-3xl overflow-hidden max-w-3xl mx-auto text-center px-10 py-14 bg-white" style={{ border: '2px solid transparent', backgroundClip: 'padding-box', boxShadow: '0 12px 48px rgba(125,194,66,0.15), 0 2px 8px rgba(41,171,226,0.1)' }}>
+                {/* Gradient border via pseudo-element workaround — inset ring */}
+                <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{ border: '2px solid transparent', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #7DC242, #29ABE2) border-box' }} />
+                {/* Large decorative quote mark */}
+                <div className="relative flex justify-center mb-4">
+                  <span className="text-9xl font-serif leading-none select-none" style={{ color: '#7DC242', opacity: 0.18, lineHeight: 1, marginBottom: '-2rem' }}>"</span>
                 </div>
+                {/* Mission quote */}
+                <blockquote className="relative text-2xl md:text-3xl font-bold italic mb-6 leading-snug" style={{ color: '#1a4d1a' }}>
+                  To be best at satisfying customer needs with innovative and tailored packaging products.
+                </blockquote>
+                {/* Divider */}
+                <div className="mx-auto mb-6 w-20 h-1 rounded-full" style={{ background: 'linear-gradient(90deg, #7DC242, #29ABE2)' }} />
+                {/* Supporting text */}
+                <p className="text-base leading-relaxed max-w-xl mx-auto" style={{ color: '#3a6060' }}>
+                  We strive to understand our customers' unique requirements and deliver customized solutions that exceed expectations through continuous innovation and unwavering quality standards.
+                </p>
               </div>
             </FadeUp>
           </div>
