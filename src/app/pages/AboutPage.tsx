@@ -175,7 +175,7 @@ export function AboutPage() {
         </div>
       </div>
 
-      {/* ── MISSION & VISION ── */}
+      {/* ── MISSION ── */}
       <div className="py-0" style={{ background: '#EBF5FC' }}>
         <WaveUp fill="#ffffff" />
         <div className="py-12" style={{ background: '#EBF5FC' }}>
@@ -183,16 +183,15 @@ export function AboutPage() {
             <FadeUp>
               <div className="text-center mb-10">
                 <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#29ABE2' }}>What Drives Us</p>
-                <h2 className="text-3xl font-bold" style={{ color: '#1a4d1a' }}>Mission &amp; Vision</h2>
+                <h2 className="text-3xl font-bold" style={{ color: '#1a4d1a' }}>Our Mission</h2>
               </div>
             </FadeUp>
-            <StaggerList className="grid md:grid-cols-2 gap-8">
-              <StaggerItem>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <FadeUp>
                 <div className="relative rounded-2xl overflow-hidden" style={{ border: '1px solid #d0eef8', boxShadow: '0 4px 20px rgba(46,170,46,0.12)' }}>
                   <div className="h-2 w-full" style={{ background: 'linear-gradient(90deg, #7DC242, #29ABE2)' }} />
                   <div className="p-8 bg-white">
                     <div className="text-5xl mb-4">🎯</div>
-                    <h2 className="text-2xl font-bold mb-4" style={{ color: '#1a4d1a' }}>Our Mission</h2>
                     <blockquote className="text-lg font-semibold italic mb-4 pl-4" style={{ color: '#1a6c1a', borderLeft: '3px solid #7DC242' }}>
                       "To be best at satisfying customer needs with innovative and tailored packaging products."
                     </blockquote>
@@ -203,24 +202,13 @@ export function AboutPage() {
                     </p>
                   </div>
                 </div>
-              </StaggerItem>
-              <StaggerItem>
-                <div className="relative rounded-2xl overflow-hidden" style={{ border: '1px solid #d0eef8', boxShadow: '0 4px 20px rgba(0,165,192,0.12)' }}>
-                  <div className="h-2 w-full" style={{ background: 'linear-gradient(90deg, #29ABE2, #7DC242)' }} />
-                  <div className="p-8 bg-white">
-                    <div className="text-5xl mb-4">🔭</div>
-                    <h2 className="text-2xl font-bold mb-4" style={{ color: '#1a4d1a' }}>Our Vision</h2>
-                    <blockquote className="text-lg font-semibold italic mb-4 pl-4" style={{ color: '#006080', borderLeft: '3px solid #29ABE2' }}>
-                      "To become India's most trusted and innovative plastic packaging solutions provider."
-                    </blockquote>
-                    <p style={{ color: '#3a5a5a' }}>
-                      We envision a future where Hisahi Plastrochem is synonymous with excellence,
-                      reliability, and environmental responsibility in the packaging industry.
-                    </p>
-                  </div>
+              </FadeUp>
+              <FadeUp delay={0.15}>
+                <div className="rounded-2xl overflow-hidden" style={{ border: '2px solid #d0eef8', boxShadow: '0 8px 32px rgba(41,171,226,0.18)', aspectRatio: '4/3' }}>
+                  <img src="/bottlesimages.jpeg" alt="Hisahi Plastochem products" className="w-full h-full object-cover" />
                 </div>
-              </StaggerItem>
-            </StaggerList>
+              </FadeUp>
+            </div>
           </div>
         </div>
         <WaveDown fill="#ffffff" />
