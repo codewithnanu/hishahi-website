@@ -359,26 +359,6 @@ export function ContactPage() {
               </ul>
             </div>
 
-            {/* Location */}
-            <div className="bg-white rounded-xl overflow-hidden" style={{ border: '1px solid #d0eef8' }}>
-              <div className="px-6 py-4" style={{ borderBottom: '1px solid #d0eef8' }}>
-                <h3 className="text-xl font-bold" style={{ color: '#1a4d1a' }}>Our Location</h3>
-              </div>
-              <iframe
-                title="Hisahi Plastochem Location"
-                src="https://maps.google.com/maps?q=Plot+No-16+Phase-II+Government+Industrial+Estate+Piparia+Silvassa+Dadra+and+Nagar+Haveli+396230&output=embed"
-                width="100%"
-                height="220"
-                style={{ border: 0, display: 'block' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-              <div className="px-6 py-3 flex items-center gap-2" style={{ background: '#E3F2FA' }}>
-                <MapPin className="w-4 h-4 flex-shrink-0" style={{ color: '#7DC242' }} />
-                <p className="text-sm" style={{ color: '#3a6060' }}>Plot No-16, Phase-II, Govt. Industrial Estate, Piparia, Silvassa – 396230</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
