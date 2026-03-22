@@ -19,12 +19,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <svg viewBox="0 0 48 48" width="54" height="54" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                <ellipse cx="24" cy="24" rx="20" ry="11" fill="none" stroke="#7DC242" strokeWidth="2.5"/>
-                <ellipse cx="24" cy="24" rx="20" ry="11" fill="none" stroke="#29ABE2" strokeWidth="2" transform="rotate(60 24 24)"/>
-                <ellipse cx="24" cy="24" rx="20" ry="11" fill="none" stroke="#7DC242" strokeWidth="1.5" transform="rotate(120 24 24)" opacity="0.6"/>
-                <text x="24" y="29" textAnchor="middle" fontFamily="Georgia, serif" fontWeight="bold" fontSize="14" fill="#C41230">HP</text>
-              </svg>
+              <img src="/logo.png" alt="Hisahi Plastochem" className="w-14 h-14 object-contain flex-shrink-0" />
               <div className="flex flex-col leading-tight">
                 <span className="font-bold text-lg leading-none" style={{ color: '#C41230' }}>Hisahi Plastochem</span>
                 <span className="text-xs font-medium tracking-wide" style={{ color: '#000000' }}>PACKAGING THAT PERFORMS</span>

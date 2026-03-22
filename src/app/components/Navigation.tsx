@@ -18,15 +18,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            {/* HP orbital logo */}
-            <div className="relative w-12 h-12 flex items-center justify-center">
-              <svg viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="24" cy="24" rx="20" ry="11" fill="none" stroke="#7DC242" strokeWidth="2.5"/>
-                <ellipse cx="24" cy="24" rx="20" ry="11" fill="none" stroke="#29ABE2" strokeWidth="2" transform="rotate(60 24 24)"/>
-                <ellipse cx="24" cy="24" rx="20" ry="11" fill="none" stroke="#7DC242" strokeWidth="1.5" transform="rotate(120 24 24)" opacity="0.6"/>
-                <text x="24" y="29" textAnchor="middle" fontFamily="Georgia, serif" fontWeight="bold" fontSize="14" fill="#C41230">HP</text>
-              </svg>
-            </div>
+            <img src="/logo.png" alt="Hisahi Plastochem" className="w-12 h-12 object-contain" />
             <div className="flex flex-col leading-tight">
               <span className="font-bold text-lg leading-none" style={{ color: '#C41230' }}>Hisahi Plastochem</span>
               <span className="text-xs font-medium tracking-wide" style={{ color: '#000000' }}>PACKAGING THAT PERFORMS</span>

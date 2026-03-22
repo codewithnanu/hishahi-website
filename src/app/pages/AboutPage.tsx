@@ -2,16 +2,6 @@ import { MapPin } from 'lucide-react';
 import { FadeUp, StaggerList, StaggerItem } from '../components/FadeUp';
 import { CountUp } from '../components/CountUp';
 
-function HPLogo({ size = 80 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="50" cy="50" rx="46" ry="18" fill="none" stroke="#29ABE2" strokeWidth="2.8" transform="rotate(-30 50 50)" />
-      <ellipse cx="50" cy="50" rx="46" ry="18" fill="none" stroke="#7DC242" strokeWidth="2.8" transform="rotate(30 50 50)" />
-      <ellipse cx="50" cy="50" rx="46" ry="18" fill="none" stroke="#29ABE2" strokeWidth="2.8" transform="rotate(90 50 50)" />
-      <text x="50" y="57" textAnchor="middle" fontSize="26" fontWeight="900" fill="#C87070" fontFamily="Georgia, serif" letterSpacing="-1">HP</text>
-    </svg>
-  );
-}
 
 function WaveDown({ fill: _fill }: { fill: string }) {
   return (
@@ -119,7 +109,7 @@ export function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-12">
           <div className="flex justify-center mb-4">
             <div className="bg-white rounded-full p-3 shadow-xl">
-              <HPLogo size={72} />
+              <img src="/logo.png" alt="Hisahi Plastochem" style={{ width: 72, height: 72, objectFit: 'contain' }} />
             </div>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">About Hisahi Plastrochem</h1>
