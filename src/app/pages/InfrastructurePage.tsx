@@ -200,6 +200,28 @@ export function InfrastructurePage() {
         </div>
       </div>
 
+      {/* ── Factory Gallery ── */}
+      <div className="bg-white py-14" style={{ borderTop: '2px solid #d0eef8' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#29ABE2' }}>Inside Our Facility</p>
+            <h2 className="text-2xl font-bold" style={{ color: '#1a4d1a' }}>Factory Gallery</h2>
+            <div className="mt-3 mx-auto w-16 h-0.5" style={{ background: 'linear-gradient(90deg, #7DC242, #29ABE2)' }} />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {['/work.jpeg', '/work2.jpeg', '/work3.jpeg', '/work4.jpeg'].map((src, i) => (
+              <div key={i} className="rounded-xl overflow-hidden group" style={{ border: '1px solid #d0eef8', aspectRatio: '1/1' }}>
+                <img
+                  src={src}
+                  alt={`Factory view ${i + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* ── Quality Control Process ── */}
       <div className="bg-white py-14" style={{ borderTop: '2px solid #d0eef8' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

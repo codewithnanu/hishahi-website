@@ -175,7 +175,7 @@ export function AboutPage() {
             <FadeUp delay={0.15}>
               <div className="rounded-2xl overflow-hidden" style={{ border: '2px solid #d0eef8', boxShadow: '0 8px 32px rgba(41,171,226,0.18)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1768796369926-2e25a1e4fc9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBmYWN0b3J5JTIwbWFudWZhY3R1cmluZyUyMGZhY2lsaXR5fGVufDF8fHx8MTc3MzA0NTk2MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="/factory.jpeg"
                   alt="Hisahi Plastrochem facility"
                   className="w-full h-full object-cover"
                 />
