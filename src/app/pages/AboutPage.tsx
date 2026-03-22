@@ -175,7 +175,7 @@ export function AboutPage() {
         </div>
       </div>
 
-      {/* ── MISSION ── */}
+      {/* ── MISSION & VISION ── */}
       <div className="py-0" style={{ background: '#EBF5FC' }}>
         <WaveUp fill="#ffffff" />
         <div className="py-12" style={{ background: '#EBF5FC' }}>
@@ -183,29 +183,43 @@ export function AboutPage() {
             <FadeUp>
               <div className="text-center mb-10">
                 <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: '#29ABE2' }}>What Drives Us</p>
-                <h2 className="text-3xl font-bold" style={{ color: '#1a4d1a' }}>Our Mission</h2>
+                <h2 className="text-3xl font-bold" style={{ color: '#1a4d1a' }}>Mission &amp; Vision</h2>
               </div>
             </FadeUp>
-            <FadeUp>
-              <div className="relative rounded-3xl overflow-hidden max-w-3xl mx-auto text-center px-10 py-14 bg-white" style={{ border: '2px solid transparent', backgroundClip: 'padding-box', boxShadow: '0 12px 48px rgba(125,194,66,0.15), 0 2px 8px rgba(41,171,226,0.1)' }}>
-                {/* Gradient border via pseudo-element workaround — inset ring */}
-                <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{ border: '2px solid transparent', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #7DC242, #29ABE2) border-box' }} />
-                {/* Large decorative quote mark */}
-                <div className="relative flex justify-center mb-4">
-                  <span className="text-9xl font-serif leading-none select-none" style={{ color: '#7DC242', opacity: 0.18, lineHeight: 1, marginBottom: '-2rem' }}>"</span>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Mission */}
+              <FadeUp>
+                <div className="relative rounded-3xl max-w-3xl mx-auto text-center px-10 py-14 bg-white h-full" style={{ boxShadow: '0 12px 48px rgba(125,194,66,0.15), 0 2px 8px rgba(41,171,226,0.1)', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #7DC242, #29ABE2) border-box', border: '2px solid transparent' }}>
+                  <div className="flex justify-center mb-2">
+                    <span className="font-serif select-none" style={{ color: '#7DC242', opacity: 0.2, fontSize: '8rem', lineHeight: 0.8 }}>"</span>
+                  </div>
+                  <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#7DC242' }}>Our Mission</p>
+                  <blockquote className="text-xl md:text-2xl font-bold italic mb-6 leading-snug" style={{ color: '#1a4d1a' }}>
+                    To be best at satisfying customer needs with innovative and tailored packaging products.
+                  </blockquote>
+                  <div className="mx-auto mb-6 w-20 h-1 rounded-full" style={{ background: 'linear-gradient(90deg, #7DC242, #29ABE2)' }} />
+                  <p className="text-base leading-relaxed" style={{ color: '#3a6060' }}>
+                    We strive to understand our customers' unique requirements and deliver customized solutions that exceed expectations through continuous innovation and unwavering quality standards.
+                  </p>
                 </div>
-                {/* Mission quote */}
-                <blockquote className="relative text-2xl md:text-3xl font-bold italic mb-6 leading-snug" style={{ color: '#1a4d1a' }}>
-                  To be best at satisfying customer needs with innovative and tailored packaging products.
-                </blockquote>
-                {/* Divider */}
-                <div className="mx-auto mb-6 w-20 h-1 rounded-full" style={{ background: 'linear-gradient(90deg, #7DC242, #29ABE2)' }} />
-                {/* Supporting text */}
-                <p className="text-base leading-relaxed max-w-xl mx-auto" style={{ color: '#3a6060' }}>
-                  We strive to understand our customers' unique requirements and deliver customized solutions that exceed expectations through continuous innovation and unwavering quality standards.
-                </p>
-              </div>
-            </FadeUp>
+              </FadeUp>
+              {/* Vision */}
+              <FadeUp delay={0.15}>
+                <div className="relative rounded-3xl max-w-3xl mx-auto text-center px-10 py-14 bg-white h-full" style={{ boxShadow: '0 12px 48px rgba(41,171,226,0.15), 0 2px 8px rgba(125,194,66,0.1)', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #29ABE2, #7DC242) border-box', border: '2px solid transparent' }}>
+                  <div className="flex justify-center mb-2">
+                    <span className="font-serif select-none" style={{ color: '#29ABE2', opacity: 0.2, fontSize: '8rem', lineHeight: 0.8 }}>"</span>
+                  </div>
+                  <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#29ABE2' }}>Our Vision</p>
+                  <blockquote className="text-xl md:text-2xl font-bold italic mb-6 leading-snug" style={{ color: '#1a4d1a' }}>
+                    To become India's most trusted and innovative plastic packaging solutions provider.
+                  </blockquote>
+                  <div className="mx-auto mb-6 w-20 h-1 rounded-full" style={{ background: 'linear-gradient(90deg, #29ABE2, #7DC242)' }} />
+                  <p className="text-base leading-relaxed" style={{ color: '#3a6060' }}>
+                    We envision a future where Hisahi Plastrochem is synonymous with excellence, reliability, and environmental responsibility in the packaging industry.
+                  </p>
+                </div>
+              </FadeUp>
+            </div>
           </div>
         </div>
         <WaveDown fill="#ffffff" />
