@@ -279,14 +279,14 @@ export function AboutPage() {
               { to: 70, suffix: ' MT', label: 'Monthly Capacity' },
             ].map((stat) => (
               <StaggerItem key={stat.label}>
-                <div className="rounded-2xl px-6 py-8 text-center flex flex-col items-center bg-white" style={{ border: '1px solid #d0eef8', boxShadow: '0 4px 16px rgba(41,171,226,0.08)' }}>
-                  <div className="text-5xl font-black mb-2 tracking-tight leading-none" style={{ color: '#7DC242' }}>
+                <div className="rounded-2xl px-3 py-5 sm:px-6 sm:py-8 text-center flex flex-col items-center bg-white" style={{ border: '1px solid #d0eef8', boxShadow: '0 4px 16px rgba(41,171,226,0.08)' }}>
+                  <div className="text-3xl sm:text-5xl font-black mb-2 tracking-tight leading-none" style={{ color: '#7DC242' }}>
                     <CountUp to={stat.to} suffix={stat.suffix} />
                   </div>
-                  <svg width="60" height="10" viewBox="0 0 60 10" className="mb-3 opacity-60">
+                  <svg width="40" height="8" viewBox="0 0 60 10" className="mb-2 sm:mb-3 opacity-60">
                     <path d="M0,5 C10,0 15,10 25,5 C35,0 40,10 50,5 C55,2 58,4 60,5" fill="none" stroke="#7DC242" strokeWidth="2" strokeLinecap="round"/>
                   </svg>
-                  <p className="text-xs font-bold uppercase tracking-widest" style={{ color: '#3a5a5a' }}>{stat.label}</p>
+                  <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wide sm:tracking-widest" style={{ color: '#3a5a5a' }}>{stat.label}</p>
                 </div>
               </StaggerItem>
             ))}
