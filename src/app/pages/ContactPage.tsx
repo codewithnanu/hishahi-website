@@ -144,12 +144,12 @@ export function ContactPage() {
       </div>
 
       {/* Form & Sidebar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid lg:grid-cols-5 gap-8">
 
           {/* Contact Form */}
           <div className="lg:col-span-3">
-            <div className="bg-white rounded-xl p-8" style={{ border: '1px solid #d0eef8', boxShadow: '0 2px 12px rgba(41,171,226,0.1)' }}>
+            <div className="bg-white rounded-xl p-4 sm:p-8" style={{ border: '1px solid #d0eef8', boxShadow: '0 2px 12px rgba(41,171,226,0.1)' }}>
               <h2 className="text-2xl font-bold mb-2" style={{ color: '#1a4d1a' }}>Send us a Message</h2>
               <p className="text-sm mb-6" style={{ color: '#3a6060' }}>
                 Fill in your details and reach us instantly via Email or WhatsApp.

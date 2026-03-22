@@ -57,7 +57,7 @@ export function ProductCard({ product }: ProductCardProps) {
           background: 'linear-gradient(135deg, #c8e89a, #e8f7cc)',
           borderTop: '2px solid #a8c878',
           flexShrink: 0,
-          minHeight: '56px',
+          minHeight: '64px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -86,7 +86,7 @@ export function ProductCard({ product }: ProductCardProps) {
         style={{
           borderTop: '1px solid #d8edba',
           flexShrink: 0,
-          minHeight: '68px',
+          minHeight: '78px',
           padding: '10px 16px',
         }}
       >

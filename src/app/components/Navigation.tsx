@@ -17,11 +17,11 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="Hisahi Plastochem" className="h-12 w-auto object-contain" />
-            <div className="flex flex-col leading-tight">
-              <span className="font-bold text-lg leading-none" style={{ color: '#C41230' }}>Hisahi Plastochem</span>
-              <span className="text-xs font-medium tracking-wide" style={{ color: '#000000' }}>PACKAGING THAT PERFORMS</span>
+          <Link to="/" className="flex items-center gap-2 min-w-0">
+            <img src="/logo.png" alt="Hisahi Plastochem" className="h-10 w-auto object-contain flex-shrink-0" />
+            <div className="flex flex-col leading-tight min-w-0">
+              <span className="font-bold text-base sm:text-lg leading-none truncate" style={{ color: '#C41230' }}>Hisahi Plastochem</span>
+              <span className="text-xs font-medium tracking-wide truncate hidden xs:block" style={{ color: '#000000' }}>PACKAGING THAT PERFORMS</span>
             </div>
           </Link>
 

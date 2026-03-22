@@ -189,7 +189,7 @@ export function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Mission */}
               <FadeUp>
-                <div className="relative rounded-3xl max-w-3xl mx-auto text-center px-10 py-14 bg-white h-full" style={{ boxShadow: '0 12px 48px rgba(125,194,66,0.15), 0 2px 8px rgba(41,171,226,0.1)', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #7DC242, #29ABE2) border-box', border: '2px solid transparent' }}>
+                <div className="relative rounded-3xl max-w-3xl mx-auto text-center px-5 sm:px-10 py-10 sm:py-14 bg-white h-full" style={{ boxShadow: '0 12px 48px rgba(125,194,66,0.15), 0 2px 8px rgba(41,171,226,0.1)', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #7DC242, #29ABE2) border-box', border: '2px solid transparent' }}>
                   <div className="flex justify-center mb-2">
                     <span className="font-serif select-none" style={{ color: '#7DC242', opacity: 0.2, fontSize: '8rem', lineHeight: 0.8 }}>"</span>
                   </div>
@@ -205,7 +205,7 @@ export function AboutPage() {
               </FadeUp>
               {/* Vision */}
               <FadeUp delay={0.15}>
-                <div className="relative rounded-3xl max-w-3xl mx-auto text-center px-10 py-14 bg-white h-full" style={{ boxShadow: '0 12px 48px rgba(41,171,226,0.15), 0 2px 8px rgba(125,194,66,0.1)', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #29ABE2, #7DC242) border-box', border: '2px solid transparent' }}>
+                <div className="relative rounded-3xl max-w-3xl mx-auto text-center px-5 sm:px-10 py-10 sm:py-14 bg-white h-full" style={{ boxShadow: '0 12px 48px rgba(41,171,226,0.15), 0 2px 8px rgba(125,194,66,0.1)', background: 'linear-gradient(white, white) padding-box, linear-gradient(135deg, #29ABE2, #7DC242) border-box', border: '2px solid transparent' }}>
                   <div className="flex justify-center mb-2">
                     <span className="font-serif select-none" style={{ color: '#29ABE2', opacity: 0.2, fontSize: '8rem', lineHeight: 0.8 }}>"</span>
                   </div>

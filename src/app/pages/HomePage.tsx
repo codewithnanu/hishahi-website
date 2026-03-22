@@ -47,9 +47,9 @@ export function HomePage() {
           </svg>
         </div>
 
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-28 text-center">
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -68,23 +68,23 @@ export function HomePage() {
           {/* Search bar */}
           <motion.form
             onSubmit={handleSearch}
-            className="flex items-center max-w-xl mx-auto mb-8 rounded-xl overflow-hidden shadow-xl"
+            className="flex items-center w-full max-w-xl mx-auto mb-8 rounded-xl overflow-hidden shadow-xl"
             style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(8px)', border: '1.5px solid rgba(255,255,255,0.4)' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35, ease: 'easeOut' }}
           >
-            <Search className="w-5 h-5 ml-4 flex-shrink-0 text-white/70" />
+            <Search className="w-5 h-5 ml-3 sm:ml-4 flex-shrink-0 text-white/70" />
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search products..."
-              className="flex-1 bg-transparent px-4 py-4 text-white placeholder-white/60 outline-none text-base"
+              className="flex-1 min-w-0 bg-transparent px-3 sm:px-4 py-3 sm:py-4 text-white placeholder-white/60 outline-none text-sm sm:text-base"
             />
             <button
               type="submit"
-              className="px-6 py-4 font-semibold text-white transition-all hover:opacity-90 active:scale-95"
+              className="flex-shrink-0 px-4 sm:px-6 py-3 sm:py-4 font-semibold text-sm sm:text-base text-white transition-all hover:opacity-90 active:scale-95"
               style={{ background: '#7DC242' }}
             >
               Search
@@ -153,7 +153,7 @@ export function HomePage() {
               Industries We Serve
             </h2>
           </FadeUp>
-          <StaggerList className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+          <StaggerList className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
 
             {/* Agro Chemicals */}
             <StaggerItem>
@@ -169,7 +169,7 @@ export function HomePage() {
                   <line x1="42" y1="35" x2="48" y2="35" stroke="#29ABE2" strokeWidth="1.5"/>
                   <line x1="42" y1="40" x2="48" y2="40" stroke="#29ABE2" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Agro Chemicals</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Agro Chemicals</p>
               </div>
             </StaggerItem>
 
@@ -186,7 +186,7 @@ export function HomePage() {
                   <line x1="26" y1="36" x2="38" y2="36" stroke="#7DC242" strokeWidth="1.5"/>
                   <line x1="26" y1="42" x2="38" y2="42" stroke="#7DC242" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Lubricating Oils</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Lubricating Oils</p>
               </div>
             </StaggerItem>
 
@@ -201,7 +201,7 @@ export function HomePage() {
                   <line x1="32" y1="12" x2="32" y2="8" stroke="#29ABE2" strokeWidth="2"/>
                   <line x1="40" y1="14" x2="40" y2="10" stroke="#29ABE2" strokeWidth="2"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Petrochemicals &amp; Additives</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Petrochemicals &amp; Additives</p>
               </div>
             </StaggerItem>
 
@@ -215,7 +215,7 @@ export function HomePage() {
                   <circle cx="36" cy="44" r="2" fill="#29ABE2"/>
                   <circle cx="32" cy="36" r="2" fill="#7DC242"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Industrial Chemicals</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Industrial Chemicals</p>
               </div>
             </StaggerItem>
 
@@ -230,7 +230,7 @@ export function HomePage() {
                   <line x1="26" y1="38" x2="38" y2="38" stroke="#29ABE2" strokeWidth="1.5"/>
                   <line x1="26" y1="44" x2="38" y2="44" stroke="#29ABE2" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Edible Oils</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Edible Oils</p>
               </div>
             </StaggerItem>
 
@@ -246,7 +246,7 @@ export function HomePage() {
                   <line x1="28" y1="38" x2="36" y2="38" stroke="#29ABE2" strokeWidth="1.5"/>
                   <line x1="28" y1="44" x2="36" y2="44" stroke="#29ABE2" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Personal Care / Hygiene</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Personal Care / Hygiene</p>
               </div>
             </StaggerItem>
 
@@ -258,7 +258,7 @@ export function HomePage() {
                   <path d="M16 44 Q20 40 24 44 Q28 48 32 44 Q36 40 40 44 Q44 48 48 44" stroke="#29ABE2" strokeWidth="2" fill="none" strokeLinecap="round"/>
                   <path d="M16 50 Q20 46 24 50 Q28 54 32 50 Q36 46 40 50 Q44 54 48 50" stroke="#7DC242" strokeWidth="2" fill="none" strokeLinecap="round"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Water Treatment</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Water Treatment</p>
               </div>
             </StaggerItem>
 
@@ -277,7 +277,7 @@ export function HomePage() {
                   <line x1="42" y1="22" x2="38" y2="26" stroke="#29ABE2" strokeWidth="1.5"/>
                   <line x1="26" y1="38" x2="22" y2="42" stroke="#29ABE2" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Automobile Components</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Automobile Components</p>
               </div>
             </StaggerItem>
 
@@ -292,7 +292,7 @@ export function HomePage() {
                   <line x1="25" y1="38" x2="39" y2="38" stroke="#29ABE2" strokeWidth="1.5"/>
                   <line x1="25" y1="44" x2="39" y2="44" stroke="#29ABE2" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Food Industry</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Food Industry</p>
               </div>
             </StaggerItem>
 
@@ -307,7 +307,7 @@ export function HomePage() {
                   <line x1="24" y1="42" x2="40" y2="42" stroke="#7DC242" strokeWidth="1.5"/>
                   <line x1="24" y1="48" x2="40" y2="48" stroke="#7DC242" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Dairy</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Dairy</p>
               </div>
             </StaggerItem>
 
@@ -323,7 +323,7 @@ export function HomePage() {
               Why Choose Us
             </h2>
           </FadeUp>
-          <StaggerList className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+          <StaggerList className="grid grid-cols-2 lg:grid-cols-6 gap-3 sm:gap-5">
 
             {/* 70 MT Capacity */}
             <StaggerItem>
@@ -335,7 +335,7 @@ export function HomePage() {
                   <line x1="4" y1="56" x2="60" y2="56" stroke="#1a3a1a" strokeWidth="2"/>
                   <path d="M44 14 L50 8 L56 14" stroke="#29ABE2" strokeWidth="2" fill="none"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>70 MT/Month Capacity</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>70 MT/Month Capacity</p>
               </div>
             </StaggerItem>
 
@@ -346,7 +346,7 @@ export function HomePage() {
                   <path d="M32 8 L52 18 L52 36 Q52 50 32 58 Q12 50 12 36 L12 18 Z" stroke="#7DC242" strokeWidth="2" fill="none"/>
                   <path d="M22 32 L28 38 L42 24" stroke="#7DC242" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>100% Leak Tested</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>100% Leak Tested</p>
               </div>
             </StaggerItem>
 
@@ -365,7 +365,7 @@ export function HomePage() {
                   <line x1="46" y1="18" x2="42" y2="22" stroke="#7DC242" strokeWidth="1.5"/>
                   <line x1="22" y1="42" x2="18" y2="46" stroke="#7DC242" strokeWidth="1.5"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>200-Pt Parison Control</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>200-Pt Parison Control</p>
               </div>
             </StaggerItem>
 
@@ -381,7 +381,7 @@ export function HomePage() {
                   <circle cx="36" cy="28" r="2" fill="#29ABE2"/>
                   <circle cx="43" cy="28" r="2" fill="#A5D63A"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>5-Colour Screen Printing</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>5-Colour Screen Printing</p>
               </div>
             </StaggerItem>
 
@@ -396,7 +396,7 @@ export function HomePage() {
                   <line x1="24" y1="46" x2="34" y2="46" stroke="#29ABE2" strokeWidth="2"/>
                   <path d="M38 10 L44 10 L50 20 L38 20 Z" stroke="#7DC242" strokeWidth="1.5" fill="none"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Custom Moulding</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Custom Moulding</p>
               </div>
             </StaggerItem>
 
@@ -410,7 +410,7 @@ export function HomePage() {
                   <line x1="32" y1="45" x2="32" y2="49" stroke="#7DC242" strokeWidth="2"/>
                   <path d="M26 10 Q32 6 38 10" stroke="#7DC242" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
                 </svg>
-                <p className="text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Induction Sealing</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Induction Sealing</p>
               </div>
             </StaggerItem>
 

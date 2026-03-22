@@ -84,23 +84,23 @@ export function InfrastructurePage() {
 
         <div className="bg-white rounded-xl overflow-hidden" style={{ border: '1px solid #d0eef8', boxShadow: '0 4px 16px rgba(41,171,226,0.12)' }}>
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-sm">
+            <table className="w-full border-collapse text-xs sm:text-sm">
               <thead>
                 <tr style={{ background: 'linear-gradient(135deg, #7DC242, #29ABE2)' }}>
                   {['Sr. No.', 'Description of Machine', 'Quantity', 'Make', 'Size / Capacity', 'View Strip Arrangement', 'Multipoint Parison Programmer'].map(h => (
-                    <th key={h} className="px-4 py-3 text-left text-white font-semibold whitespace-nowrap">{h}</th>
+                    <th key={h} className="px-2 sm:px-4 py-3 text-left text-white font-semibold whitespace-nowrap">{h}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {machineRows.map((row, i) => (
                   <tr key={row.sr} style={{ background: i % 2 === 0 ? '#ffffff' : '#E3F2FA', borderBottom: '1px solid #e0f0f8' }}>
-                    <td className="px-4 py-3 font-medium text-center" style={{ color: '#1a3a1a' }}>{row.sr}</td>
-                    <td className="px-4 py-3 font-medium" style={{ color: '#1a3a1a' }}>{row.desc}</td>
-                    <td className="px-4 py-3 text-center" style={{ color: '#1a3a1a' }}>{row.qty}</td>
-                    <td className="px-4 py-3" style={{ color: '#1a3a1a' }}>{row.make}</td>
-                    <td className="px-4 py-3" style={{ color: '#1a3a1a' }}>{row.size}</td>
-                    <td className="px-4 py-3 text-center">
+                    <td className="px-2 sm:px-4 py-3 font-medium text-center" style={{ color: '#1a3a1a' }}>{row.sr}</td>
+                    <td className="px-2 sm:px-4 py-3 font-medium" style={{ color: '#1a3a1a' }}>{row.desc}</td>
+                    <td className="px-2 sm:px-4 py-3 text-center" style={{ color: '#1a3a1a' }}>{row.qty}</td>
+                    <td className="px-2 sm:px-4 py-3" style={{ color: '#1a3a1a' }}>{row.make}</td>
+                    <td className="px-2 sm:px-4 py-3" style={{ color: '#1a3a1a' }}>{row.size}</td>
+                    <td className="px-2 sm:px-4 py-3 text-center">
                       {row.viewStrip ? (
                         <span className="px-2 py-0.5 rounded-full text-xs font-semibold"
                           style={row.viewStrip === 'YES'
@@ -110,7 +110,7 @@ export function InfrastructurePage() {
                         </span>
                       ) : '—'}
                     </td>
-                    <td className="px-4 py-3" style={{ color: '#3a6060' }}>{row.parison || '—'}</td>
+                    <td className="px-2 sm:px-4 py-3" style={{ color: '#3a6060' }}>{row.parison || '—'}</td>
                   </tr>
                 ))}
               </tbody>
@@ -126,21 +126,21 @@ export function InfrastructurePage() {
         </h2>
         <div className="bg-white rounded-xl overflow-hidden" style={{ border: '1px solid #d0eef8', boxShadow: '0 4px 16px rgba(41,171,226,0.12)' }}>
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-sm">
+            <table className="w-full border-collapse text-xs sm:text-sm">
               <thead>
                 <tr style={{ background: 'linear-gradient(135deg, #7DC242, #29ABE2)' }}>
                   {['Sr. No', 'Type of Raw Material', 'Supplier', 'Local / Imported', 'Duty Structure'].map(h => (
-                    <th key={h} className="px-4 py-3 text-left text-white font-semibold whitespace-nowrap">{h}</th>
+                    <th key={h} className="px-2 sm:px-4 py-3 text-left text-white font-semibold whitespace-nowrap">{h}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {rawMaterialRows.map((row, i) => (
                   <tr key={row.sr} style={{ background: i % 2 === 0 ? '#ffffff' : '#E3F2FA', borderBottom: '1px solid #e0f0f8' }}>
-                    <td className="px-4 py-3 font-medium text-center" style={{ color: '#1a3a1a' }}>{row.sr}</td>
-                    <td className="px-4 py-3 font-medium" style={{ color: '#1a3a1a' }}>{row.type}</td>
-                    <td className="px-4 py-3" style={{ color: '#1a3a1a' }}>{row.supplier}</td>
-                    <td className="px-4 py-3 text-center">
+                    <td className="px-2 sm:px-4 py-3 font-medium text-center" style={{ color: '#1a3a1a' }}>{row.sr}</td>
+                    <td className="px-2 sm:px-4 py-3 font-medium" style={{ color: '#1a3a1a' }}>{row.type}</td>
+                    <td className="px-2 sm:px-4 py-3" style={{ color: '#1a3a1a' }}>{row.supplier}</td>
+                    <td className="px-2 sm:px-4 py-3 text-center">
                       <span className="px-2 py-0.5 rounded-full text-xs font-semibold"
                         style={row.localImported === 'Imported'
                           ? { background: '#fef3e2', color: '#92400e', border: '1px solid #fcd34d' }
@@ -148,7 +148,7 @@ export function InfrastructurePage() {
                         {row.localImported}
                       </span>
                     </td>
-                    <td className="px-4 py-3" style={{ color: '#3a6060' }}>{row.duty}</td>
+                    <td className="px-2 sm:px-4 py-3" style={{ color: '#3a6060' }}>{row.duty}</td>
                   </tr>
                 ))}
               </tbody>
