@@ -62,7 +62,7 @@ export function InfrastructurePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { value: '70 MT',  label: 'Monthly Capacity',   sub: 'Raw material processing/month' },
+              { value: '100 MT',  label: 'Monthly Capacity',   sub: 'Raw material processing/month' },
               { value: '100%',   label: 'Leak Tested',        sub: 'Every product tested before dispatch' },
               { value: '11',     label: 'Machine Types',      sub: 'Advanced production equipment' },
             ].map(s => (
@@ -188,11 +188,11 @@ export function InfrastructurePage() {
                 We also have screen printing set up containing automatic and manual screen printers capable of <strong>five color printing</strong> over containers.
               </p>
               <p className="mb-6">
-                Our present capacity is to convert <strong>70 MT of raw material (HDPE/PP granules) per month</strong>.
+                Our present capacity is to convert <strong>100 MT of raw material (HDPE/PP granules) per month</strong>.
               </p>
               <div className="rounded-xl p-5" style={{ background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(46,170,46,0.3)' }}>
                 <p className="font-bold text-lg mb-1" style={{ color: '#1a6c1a' }}>Production Capacity</p>
-                <p className="text-3xl font-bold mb-1" style={{ color: '#1a3a1a' }}>70 MT / Month</p>
+                <p className="text-3xl font-bold mb-1" style={{ color: '#1a3a1a' }}>100 MT / Month</p>
                 <p className="text-sm" style={{ color: '#3a6060' }}>Raw material (HDPE/PP granules) processing capacity</p>
               </div>
             </div>

@@ -120,7 +120,7 @@ export function HomePage() {
                 Welcome to Hisahi Plastochem, your trusted partner in high-quality rigid plastic packaging solutions. Based in Silvassa, we operate a state-of-the-art manufacturing facility equipped with advanced blow moulding technology.
               </p>
               <p className="mb-4" style={{ color: '#3a5a3a' }}>
-                Our commitment to precision, quality, and reliability has made us a preferred choice for industries ranging from agrochemicals to edible oils. With a production capacity of 70 MT of raw material processing per month, we deliver excellence at scale.
+                Our commitment to precision, quality, and reliability has made us a preferred choice for industries ranging from agrochemicals to edible oils. With a production capacity of 100 MT of raw material processing per month, we deliver excellence at scale.
               </p>
               <Link
                 to="/about"
@@ -281,36 +281,6 @@ export function HomePage() {
               </div>
             </StaggerItem>
 
-            {/* Food Industry */}
-            <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="18" y="22" width="28" height="32" rx="4" stroke="#7DC242" strokeWidth="2" fill="none"/>
-                  <path d="M18 30 L46 30" stroke="#7DC242" strokeWidth="1.5"/>
-                  <ellipse cx="32" cy="22" rx="14" ry="5" stroke="#7DC242" strokeWidth="2"/>
-                  <ellipse cx="32" cy="22" rx="6" ry="3" stroke="#29ABE2" strokeWidth="1.5"/>
-                  <line x1="25" y1="38" x2="39" y2="38" stroke="#29ABE2" strokeWidth="1.5"/>
-                  <line x1="25" y1="44" x2="39" y2="44" stroke="#29ABE2" strokeWidth="1.5"/>
-                </svg>
-                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Food Industry</p>
-              </div>
-            </StaggerItem>
-
-            {/* Dairy */}
-            <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 20 L20 30 L20 50 Q20 54 24 54 L40 54 Q44 54 44 50 L44 30 L42 20 Z" stroke="#29ABE2" strokeWidth="2" fill="none"/>
-                  <path d="M22 20 Q28 14 32 16 Q36 14 42 20" stroke="#29ABE2" strokeWidth="2" fill="none"/>
-                  <rect x="28" y="12" width="8" height="8" rx="2" stroke="#29ABE2" strokeWidth="1.5"/>
-                  <path d="M24 34 Q32 28 40 34" stroke="#7DC242" strokeWidth="2" fill="none"/>
-                  <line x1="24" y1="42" x2="40" y2="42" stroke="#7DC242" strokeWidth="1.5"/>
-                  <line x1="24" y1="48" x2="40" y2="48" stroke="#7DC242" strokeWidth="1.5"/>
-                </svg>
-                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>Dairy</p>
-              </div>
-            </StaggerItem>
-
           </StaggerList>
         </div>
       </section>
@@ -325,7 +295,7 @@ export function HomePage() {
           </FadeUp>
           <StaggerList className="grid grid-cols-2 lg:grid-cols-6 gap-3 sm:gap-5">
 
-            {/* 70 MT Capacity */}
+            {/* 100 MT Capacity */}
             <StaggerItem>
               <div className="bg-white rounded-2xl p-3 sm:p-5 flex flex-col items-center gap-2 sm:gap-3 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,7 +305,7 @@ export function HomePage() {
                   <line x1="4" y1="56" x2="60" y2="56" stroke="#1a3a1a" strokeWidth="2"/>
                   <path d="M44 14 L50 8 L56 14" stroke="#29ABE2" strokeWidth="2" fill="none"/>
                 </svg>
-                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>70 MT/Month Capacity</p>
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-center" style={{ color: '#1a3a1a' }}>100 MT/Month Capacity</p>
               </div>
             </StaggerItem>
 
@@ -465,7 +435,7 @@ export function HomePage() {
 
               <div className="rounded-lg p-4 mb-6" style={{ background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(46,170,46,0.3)' }}>
                 <p className="font-semibold" style={{ color: '#1a6c1a' }}>Production Capacity</p>
-                <p className="text-2xl font-bold" style={{ color: '#1a3a1a' }}>70 MT / Month</p>
+                <p className="text-2xl font-bold" style={{ color: '#1a3a1a' }}>100 MT / Month</p>
                 <p className="text-sm" style={{ color: '#3a5a3a' }}>Raw material processing capacity</p>
               </div>
 

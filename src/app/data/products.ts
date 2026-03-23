@@ -358,6 +358,6 @@ export const products: Product[] = [
       { capacity: '5000ml (Square Design)', heightWithCap: 300, neckDiameter: 28, plugInner: true },
     ],
     applications: ['Cooking oil packaging', 'Vegetable oil containers', 'Sunflower oil storage', 'Food-grade liquids'],
-    industries: ['Edible Oils', 'Food Industry'],
+    industries: ['Edible Oils'],
   },
 ];

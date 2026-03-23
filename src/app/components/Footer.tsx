@@ -30,7 +30,7 @@ export function Footer() {
             </p>
             <div className="text-xs" style={{ color: '#3a6060' }}>
               <p className="font-semibold mb-0.5" style={{ color: '#1a4d1a' }}>Founded by</p>
-              <p>Chetan Sharma <span style={{ color: '#7DC242' }}>·</span> Chetan Sharma</p>
+              <p>Chetan Sharma <span style={{ color: '#7DC242' }}>·</span> Pradeep Matolia</p>
               <p className="text-xs mt-0.5" style={{ color: '#6a9090' }}>Founder &amp; Co-Founder</p>
             </div>
           </div>

@@ -17,7 +17,6 @@ export function ProductsPage() {
     'Petrochemicals & Additives',
     'Industrial Chemicals',
     'Edible Oils',
-    'Food Industry',
     'Water Treatment',
     'Automobile Components',
     'Personal Care / Hygiene',

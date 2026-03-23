@@ -246,7 +246,7 @@ export function ContactPage() {
                     <option value="Water Treatment">Water Treatment</option>
                     <option value="Edible Oils">Edible Oils</option>
                     <option value="Automobile Components">Automobile Components</option>
-                    <option value="Food Industry">Food Industry</option>
+
                     <option value="Other">Other</option>
                   </select>
                 </div>

@@ -276,7 +276,7 @@ export function AboutPage() {
               { to: 15, suffix: '+', label: 'Years of Excellence' },
               { to: 300, suffix: '+', label: 'Happy Clients' },
               { to: 22, suffix: '+', label: 'Product Variants' },
-              { to: 70, suffix: ' MT', label: 'Monthly Capacity' },
+              { to: 100, suffix: ' MT', label: 'Monthly Capacity' },
             ].map((stat) => (
               <StaggerItem key={stat.label}>
                 <div className="rounded-2xl px-3 py-5 sm:px-6 sm:py-8 text-center flex flex-col items-center bg-white" style={{ border: '1px solid #d0eef8', boxShadow: '0 4px 16px rgba(41,171,226,0.08)' }}>
