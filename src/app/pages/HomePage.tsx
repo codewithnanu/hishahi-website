@@ -153,11 +153,11 @@ export function HomePage() {
               Industries We Serve
             </h2>
           </FadeUp>
-          <StaggerList className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
+          <StaggerList className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5 items-stretch">
 
             {/* Agro Chemicals */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="10" y="22" width="16" height="30" rx="3" stroke="#7DC242" strokeWidth="2"/>
                   <rect x="13" y="16" width="10" height="8" rx="2" stroke="#7DC242" strokeWidth="2"/>
@@ -175,7 +175,7 @@ export function HomePage() {
 
             {/* Lubricating Oils */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 18 L20 50 Q20 54 24 54 L40 54 Q44 54 44 50 L44 18 Z" stroke="#7DC242" strokeWidth="2" fill="none"/>
                   <path d="M24 18 L24 12 L40 12 L40 18" stroke="#7DC242" strokeWidth="2" fill="none"/>
@@ -192,7 +192,7 @@ export function HomePage() {
 
             {/* Petrochemicals */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <ellipse cx="32" cy="20" rx="16" ry="6" stroke="#29ABE2" strokeWidth="2"/>
                   <path d="M16 20 L16 46 Q16 52 32 52 Q48 52 48 46 L48 20" stroke="#29ABE2" strokeWidth="2"/>
@@ -207,7 +207,7 @@ export function HomePage() {
 
             {/* Industrial Chemicals */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M26 10 L26 28 L14 50 Q12 54 16 54 L48 54 Q52 54 50 50 L38 28 L38 10 Z" stroke="#7DC242" strokeWidth="2" fill="none"/>
                   <line x1="24" y1="10" x2="40" y2="10" stroke="#7DC242" strokeWidth="2"/>
@@ -221,7 +221,7 @@ export function HomePage() {
 
             {/* Edible Oils */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22 18 L22 50 Q22 54 26 54 L38 54 Q42 54 42 50 L42 18 Q42 14 38 14 L26 14 Q22 14 22 18 Z" stroke="#7DC242" strokeWidth="2" fill="none"/>
                   <rect x="27" y="10" width="10" height="6" rx="2" stroke="#7DC242" strokeWidth="2"/>
@@ -236,7 +236,7 @@ export function HomePage() {
 
             {/* Personal Care */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24 22 L24 50 Q24 54 28 54 L36 54 Q40 54 40 50 L40 22 Q40 18 36 18 L28 18 Q24 18 24 22 Z" stroke="#29ABE2" strokeWidth="2" fill="none"/>
                   <rect x="28" y="12" width="8" height="8" rx="2" stroke="#29ABE2" strokeWidth="2"/>
@@ -252,7 +252,7 @@ export function HomePage() {
 
             {/* Water Treatment */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M32 10 Q40 22 40 32 A8 8 0 0 1 24 32 Q24 22 32 10Z" stroke="#29ABE2" strokeWidth="2" fill="none"/>
                   <path d="M16 44 Q20 40 24 44 Q28 48 32 44 Q36 40 40 44 Q44 48 48 44" stroke="#29ABE2" strokeWidth="2" fill="none" strokeLinecap="round"/>
@@ -264,7 +264,7 @@ export function HomePage() {
 
             {/* Automobile Components */}
             <StaggerItem>
-              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300" style={{ border: '1px solid #e0e8f0' }}>
+              <div className="bg-white rounded-2xl p-3 sm:p-6 flex flex-col items-center justify-between gap-3 sm:gap-4 hover:shadow-xl transition-shadow duration-300 h-full" style={{ border: '1px solid #e0e8f0' }}>
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="32" cy="32" r="14" stroke="#7DC242" strokeWidth="2"/>
                   <circle cx="32" cy="32" r="5" stroke="#7DC242" strokeWidth="2"/>
