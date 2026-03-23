@@ -153,7 +153,7 @@ export function HomePage() {
               Industries We Serve
             </h2>
           </FadeUp>
-          <StaggerList className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
+          <StaggerList className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-5">
 
             {/* Agro Chemicals */}
             <StaggerItem>
