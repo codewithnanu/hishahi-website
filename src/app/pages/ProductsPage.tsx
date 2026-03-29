@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useSearchParams } from 'react-router';
 import { Filter } from 'lucide-react';
 import { ProductCard } from '../components/ProductCard';
@@ -32,6 +33,11 @@ export function ProductsPage() {
 
   return (
     <div className="min-h-screen" style={{ background: '#EBF5FC' }}>
+      <Helmet>
+        <title>Products - HDPE Plastic Containers | Hisahi Plastochem</title>
+        <meta name="description" content="Browse our range of HDPE and PP plastic containers for agro chemicals, lubricants, edible oils, water treatment, and more. Manufactured in Mumbai, India." />
+        <link rel="canonical" href="https://www.hisashiplastochem.in/products" />
+      </Helmet>
       {/* Header */}
       <div className="text-white py-12 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #7DC242 0%, #29ABE2 100%)' }}>
         <div className="absolute bottom-0 left-0 right-0">

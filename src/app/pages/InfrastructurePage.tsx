@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router';
 
 const rawMaterialRows = [
@@ -35,6 +36,11 @@ const qualityProcess = [
 export function InfrastructurePage() {
   return (
     <div className="min-h-screen" style={{ background: '#EBF5FC' }}>
+      <Helmet>
+        <title>Infrastructure - Hisahi Plastochem | Blow Moulding Plant Mumbai</title>
+        <meta name="description" content="Explore Hisahi Plastochem's state-of-the-art blow moulding and injection moulding infrastructure in Mumbai. HDPE and PP container manufacturing with strict quality control." />
+        <link rel="canonical" href="https://www.hisashiplastochem.in/infrastructure" />
+      </Helmet>
 
       {/* ── Header ── */}
       <div className="relative overflow-hidden text-white py-14" style={{ background: 'linear-gradient(135deg, #7DC242 0%, #29ABE2 100%)' }}>

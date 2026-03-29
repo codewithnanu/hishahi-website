@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router';
 import { ArrowRight, Search } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -20,6 +21,11 @@ export function HomePage() {
 
   return (
     <div>
+      <Helmet>
+        <title>Hisahi Plastochem - HDPE Plastic Containers Manufacturer in Mumbai</title>
+        <meta name="description" content="Hisahi Plastochem is a leading manufacturer of HDPE and PP plastic containers in Mumbai, India. We supply bottles for agro chemicals, lubricants, edible oils, and more." />
+        <link rel="canonical" href="https://www.hisashiplastochem.in/" />
+      </Helmet>
       {/* ── HERO ── */}
       
       <section className="relative overflow-hidden text-white" style={{ background: 'linear-gradient(135deg, #7DC242 0%, #1a8c8c 40%, #29ABE2 100%)' }}>

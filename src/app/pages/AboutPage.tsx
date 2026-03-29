@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { MapPin } from 'lucide-react';
 import { FadeUp, StaggerList, StaggerItem } from '../components/FadeUp';
 import { CountUp } from '../components/CountUp';
@@ -103,6 +104,11 @@ export function AboutPage() {
 
   return (
     <div className="min-h-screen" style={{ background: '#EBF5FC' }}>
+      <Helmet>
+        <title>About Us - Hisahi Plastochem | Mumbai Plastic Manufacturer</title>
+        <meta name="description" content="Learn about Hisahi Plastochem, a trusted HDPE and PP plastic container manufacturer based in Mumbai, India with years of experience serving multiple industries." />
+        <link rel="canonical" href="https://www.hisashiplastochem.in/about" />
+      </Helmet>
 
       {/* ── HEADER ── */}
       <div className="text-white pt-14 pb-0 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #7DC242 0%, #29ABE2 100%)' }}>

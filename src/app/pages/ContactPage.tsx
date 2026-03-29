@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const WHATSAPP_NUMBER = '919137731012';
@@ -90,6 +91,11 @@ export function ContactPage() {
 
   return (
     <div className="min-h-screen" style={{ background: '#EBF5FC' }}>
+      <Helmet>
+        <title>Contact Us - Hisahi Plastochem | Mumbai</title>
+        <meta name="description" content="Get in touch with Hisahi Plastochem for bulk plastic container orders, product inquiries, or partnership. Call, WhatsApp, or email us today." />
+        <link rel="canonical" href="https://www.hisashiplastochem.in/contact" />
+      </Helmet>
       {/* Header */}
       <div className="text-white py-12 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #7DC242 0%, #29ABE2 100%)' }}>
         <div className="absolute bottom-0 left-0 right-0">
